@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+input[type="text"] {
+    display: inline;
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-left: 2%;
+    -webkit-highlight: none;
+}
+
+.searchBtn {
+    display: inline;
+    width: 15%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f44336;
+    color: white;
+    margin-right: 2%;
+
+}
+
+.mealList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    top: 50px;
+    left: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 300px;
+    color: black;
+}
+
+h2 {
+    margin: 5px;
+}
+
+img {
+    position: relative;
+    left: 75px;
+    border-radius: 30px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px
+}
