@@ -1,6 +1,5 @@
-@font-face {
-    font-family: 'Ringbearer';
-    src: url('./font/RingbearerMedium-51mgZ.ttf');
+body {
+    overflow: hidden;
 }
 
 h1 {
@@ -16,16 +15,88 @@ input {
 
 .game {
     width: 80vw;
-    height: 80vh;
+    height: 65vh;
     padding: 3rem;
     background-color: #e5eef7;
     border-radius: 1rem;
     margin: auto;
     text-align: center;
-    border: solid 4px rgb(162, 195, 216)
+    border: solid 4px rgb(162, 195, 216);
+    position: relative;
 }
 
 .dice {
     width: 5rem;
     height: 5rem;
+}
+
+.card {
+    margin-bottom: 2rem;
+    display: inline-block;
+    background-color: #f2f6fa;
+    margin: 0 3rem;
+    width: 20rem;
+    height: 18rem;
+    padding: 1.5rem;
+    border-radius: 25px;
+}
+
+.avatar {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+}
+
+.vs {
+    width: 12rem;
+    padding-bottom: 2.5rem;
+}
+
+.next-turn {
+    display: none;
+    position: relative;
+    bottom: 5rem;
+    left: 48%;
+}
+
+button {
+    --color: black;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 10px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+}
+  
+button::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+}
+  
+button:hover {
+    color: white;
+}
+  
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+}
+  
+button:hover::before {
+    top: -30px;
+    left: -30px;
 }
